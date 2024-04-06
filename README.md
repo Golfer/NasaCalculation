@@ -41,11 +41,6 @@ weight of fuel: 212161 kg
 rspec fuel_calculator_service_rspec.rb
 ````
 
-### Run for enter params at console
-````
-ruby calculator_server.rb
-````
-
 ### Run for show example mission
 ````
 ruby app.rb
