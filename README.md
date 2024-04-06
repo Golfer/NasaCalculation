@@ -2,6 +2,8 @@
 # Fuel Calculator for NASA mission
 
 ## Description
+[link to all description ](https://docs.google.com/document/d/1iRytYuAfUaih8fQHFZVfZwanQZjegFm9ulsMvmqENwM/edit)
+
 This application aims to calculate fuel to launch from one planet of the solar system and land on another planet of the solar system, depending on the flight route.
 ````
 Earth - 9.807 m/s2
