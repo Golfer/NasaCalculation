@@ -36,12 +36,12 @@ class FuelCalculatorService
       gravity = PLANET_GRAVITIES[planet]
       leg_fuel = calculate_fuel(equipment_weight, gravity, action)
       total_fuel += leg_fuel
-      @equipment_weight = calculate_weight(equipment_weight, leg_fuel, gravity, action, fuel_empty)
+      @equipment_weight = recalculate_equipment_weight(equipment_weight, leg_fuel, gravity, action, fuel_empty)
     end
     total_fuel
   end
 
-  def calculate_weight(equipment_weight, leg_fuel, gravity, action, fuel_empty)
+  def recalculate_equipment_weight(equipment_weight, leg_fuel, gravity, action, fuel_empty)
     return equipment_weight + leg_fuel if fuel_empty
 
     equipment_weight - leg_fuel - calculate_fuel(leg_fuel, gravity, action)
